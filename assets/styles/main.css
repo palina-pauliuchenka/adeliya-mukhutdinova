@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.col-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .col-2 {
+        flex-direction: column;
+    }
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+.introduction > .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.info-text {
+    opacity: .7;
+    font-size: .8rem;
+    max-width: 500px;
+    margin-bottom: 3%;
+}
+
+.introduction img {
+    width: 500px;
+    padding: 0 2%;
+}
+
+@media (max-width: 992px) {
+    .introduction {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .introduction img {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .introduction p {
+        font-size: .6rem;
+        padding-bottom: 3%;
+    }
+
+    .introduction img {
+        width: 300px;
+    }
+}
+
+.tennis-banner {
+    width: 100%;
+    display: flex;
+}
+
+.tennis-banner img {
+    width: 25%;
+}
+
+.igtv-banner {
+    padding: 3% 0;
+}
+
+.igtv-banner > .col-2 {
+    justify-content: space-around;
+}
+
+.instagram-post {
+    height: 200px;
+}
+
+.igtv-banner .btn-link {
+    margin-top: 5%;
+    display: inline-block;
+    padding: 2% 5%;
+    letter-spacing: 3px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+footer {
+    background-color: #f6f6f6;
+    padding: 2% 0;
+    text-align: center;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+footer i, footer a {
+    padding: 0 5px;
+}
